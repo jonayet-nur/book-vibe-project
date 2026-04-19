@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBook } from 'react-icons/fa'
 import { NavLink } from 'react-router'
 
 const Navbar = () => {
@@ -11,13 +12,14 @@ const Navbar = () => {
         </>
     )
   return (
-    <div>
-          <nav className='bg-white shadow-xl p-4 sticky top-0 z-50'>
+    <div className='sticky top-0 z-50'>
+          <nav className='bg-white shadow-xl p-4 '>
         <div className='w-10/12 mx-auto'>
             <div className='flex justify-between items-center '>
                 {/*  nav logo left*/}
-                <div className='flex items-center'>
-                <h2 className='text-[#4f39f6c3] font-bold text-4xl'>Book Vibe</h2>
+                <div className='flex items-center gap-2'>
+                  <span className='text-white bg-[#4f39f6c3] p-3 rounded-xl'><FaBook></FaBook></span>
+                <h2 className='text-[#4f39f6c3] font-bold text-4xl'> Book Vibe</h2>
                 </div>
 
                 {/* nav links */}
